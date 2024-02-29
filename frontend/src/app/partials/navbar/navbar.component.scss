@@ -1,4 +1,11 @@
 $text-color: black;
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .navbar {
     width: 80vw;
     // height: 50px;
@@ -9,23 +16,30 @@ $text-color: black;
     color: $text-color;
 }
 
-.logo img {
-    height: 50px;
-
+.logo {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 20px;
+    img {
+        height: 50px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
 }
+
 
 .links {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     a {
         all: unset;
         margin-right: 20px;
-        font-weight: bold;
+        // font-weight: bold;
+        font-size: 16px;
+        white-space: nowrap;
     }
 
     a:hover {
@@ -44,7 +58,7 @@ $text-color: black;
     a {
         all: unset;
         margin-right: 20px;
-        font-weight: bold;
+        // font-weight: bold;
     }
 
     a:hover {
@@ -59,8 +73,7 @@ $text-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        
+        justify-content: space-between;
 
         .top-navbar {
             display: flex;
@@ -93,9 +106,11 @@ $text-color: black;
             justify-content: center;
             margin-top: 10px;
 
+            
             a {
                 font-size: 24px;
                 margin-right: 0;
+                white-space: nowrap;
                 
                 p {
                     margin: 0.5em;

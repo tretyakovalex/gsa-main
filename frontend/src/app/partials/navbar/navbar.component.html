@@ -1,6 +1,7 @@
 <div class="navbar" *ngIf="screenWidth < 900">
     <div class="top-navbar">
         <div class="logo">
+            <img src="/assets/gsa-stamp.jpg" alt="">
             <img src="/assets/logo.png" alt="">
         </div>
         <a>
@@ -20,6 +21,7 @@
 
 <div class="navbar" *ngIf="screenWidth > 900">
     <div class="logo">
+        <img src="/assets/gsa-stamp.jpg" alt="">
         <img src="/assets/logo.png" alt="">
     </div>
     <div class="links" >
@@ -30,8 +32,6 @@
         <a routerLink="/contacts">Contact us</a>
     </div>
     <div class="account">
-        <a routerLink="/login">
-            <span class="material-symbols-outlined">person</span>
-        </a>
+        <a routerLink="/login"><p><strong>Login</strong></p></a>
     </div>
 </div>
