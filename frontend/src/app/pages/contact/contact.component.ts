@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { GoogleMapsModule } from '@angular/google-maps'
 
 @Component({
   selector: 'app-contact',

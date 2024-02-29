@@ -11,6 +11,7 @@ import { CareersComponent } from './pages/careers/careers.component';
 import { LoginComponent } from './pages/login/login.component';
 import { TitleComponentComponent } from './partials/title-component/title-component.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     CareersComponent,
     LoginComponent,
     TitleComponentComponent,
-    ContactComponent
+    ContactComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,
