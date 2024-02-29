@@ -1,0 +1,37 @@
+<div class="navbar" *ngIf="screenWidth < 900">
+    <div class="top-navbar">
+        <div class="logo">
+            <img src="/assets/logo.png" alt="">
+        </div>
+        <a>
+            <span class="material-symbols-outlined" (click)="toggleMenu()">menu</span>
+        </a>    
+    </div>
+    <div class="links" *ngIf="isMenuOpen">
+        <a routerLink="/"><p><strong>Home</strong></p></a>
+        <a routerLink="/about"> <p><strong>About us</strong></p></a>
+        <a routerLink="/services"><p><strong>Our services</strong></p></a>
+        <a routerLink="/careers"><p><strong>Careers</strong></p></a>
+        <a routerLink="/contacts"><p><strong>Contact us</strong></p></a>
+        <a routerLink="/login"><p><strong>Login</strong></p></a>
+
+    </div>
+</div>
+
+<div class="navbar" *ngIf="screenWidth > 900">
+    <div class="logo">
+        <img src="/assets/logo.png" alt="">
+    </div>
+    <div class="links" >
+        <a routerLink="/">Home</a>
+        <a routerLink="/about">About us</a>
+        <a routerLink="/services">Our services</a>
+        <a routerLink="/careers">Careers</a>
+        <a routerLink="/contacts">Contact us</a>
+    </div>
+    <div class="account">
+        <a routerLink="/login">
+            <span class="material-symbols-outlined">person</span>
+        </a>
+    </div>
+</div>

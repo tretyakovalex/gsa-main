@@ -1,0 +1,111 @@
+$text-color: black;
+.navbar {
+    width: 80vw;
+    // height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+    color: $text-color;
+}
+
+.logo img {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        all: unset;
+        margin-right: 20px;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: blue;
+        cursor: pointer;
+    }
+
+    // margin-right: 50px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    a {
+        all: unset;
+        margin-right: 20px;
+        font-weight: bold;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        width: 20em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+
+        .top-navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 20em;
+            // margin-bottom: 50px;
+
+            .logo img {
+                display: flex;
+                justify-content: left;
+            }
+
+            a span {
+                font-size: 32px;
+            }
+
+            a:hover {
+                cursor: pointer;
+            }
+        }
+
+        .links {
+            width: 20em;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: 10px;
+
+            a {
+                font-size: 24px;
+                margin-right: 0;
+                
+                p {
+                    margin: 0.5em;
+                }
+
+                span {
+                    margin-left: 20px;
+                }
+                // margin-bottom: 10px;
+            }
+        }
+    }   
+}
