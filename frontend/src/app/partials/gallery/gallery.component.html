@@ -1,0 +1,10 @@
+<h2>Our Work</h2>
+<div class="gallery">
+    <ng-container *ngFor="let col of columnIndices">
+      <div class="column">
+        <img *ngFor="let img of getImagesForColumn(col)" [src]="img" alt="">
+      </div>
+    </ng-container>
+</div>
+  
+  

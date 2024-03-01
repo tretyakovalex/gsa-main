@@ -14,7 +14,8 @@ const routes: Routes = [
   {path: "services", component: ServicesComponent},
   {path: "careers", component: CareersComponent},
   {path: "contacts", component: ContactComponent},
-  {path: "login", component: LoginComponent},
+  // {path: "login", component: LoginComponent},
+  {path: "login", component: ComingSoonComponent},
   {path: "coming-soon", component: ComingSoonComponent}
 ];
 

@@ -1,4 +1,4 @@
-$text-color: black;
+$text-color: white;
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -7,19 +7,30 @@ $text-color: black;
 }
 
 .navbar {
-    width: 80vw;
+    width: 100vw;
     // height: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    z-index: 2;
 
     color: $text-color;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 5vw;
+    z-index: -1;
+    background-image: linear-gradient(to bottom, #252525 0%, rgba(37, 37, 37, 0) 75%);
 }
 
 .logo {
     display: flex;
     gap: 20px;
-    img {
+    padding-left: 20vh; 
+   img {
         height: 50px;
     
         display: flex;
@@ -57,7 +68,7 @@ $text-color: black;
 
     a {
         all: unset;
-        margin-right: 20px;
+        margin-right: 20vh;
         // font-weight: bold;
     }
 

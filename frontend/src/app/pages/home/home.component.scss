@@ -5,6 +5,10 @@ $text-color: white;
     font-family: 'Roboto', sans-serif;
 }
 
+app-navbar {
+    z-index: 1;
+}
+
 body {
     display: flex;
     flex-direction: column;
