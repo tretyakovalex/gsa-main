@@ -9,7 +9,7 @@ $text-color: white;
     position: relative;
     // z-index: 0;
 
-    top: -20vh;
+    // top: -20vh;
     
     width: 100vw;
     height: 60vh;
@@ -34,14 +34,15 @@ $text-color: white;
     .title-content {
         margin-top: 20vh;
         position: relative; /* Ensure the content remains on top of the background */
-        z-index: 1;
+        z-index: 0;
     }
         
     h1 {
         color: $text-color;
         margin: 0.25em;
         font-size: 5rem;
-        z-index: 1;
+        z-index: 0;
+        text-shadow: 1px 1px 2px black; 
     }
 }
     
@@ -49,8 +50,8 @@ $text-color: white;
     content: "";
     position: absolute;
     width: 100vw;
-    height: 80vh;
-    top: -20vh;
+    height: 60vh;
+    // top: -20vh;
     background-color: rgba(0, 0, 0, 0.2); /* Adjust the last value (0.5) to control the darkness level */
     z-index: -1; /* Ensure the overlay is behind other content */
 }

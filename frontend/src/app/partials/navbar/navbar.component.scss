@@ -1,12 +1,16 @@
-$text-color: white;
+$text-color: black;
 
 * {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     // height: 50px;
     display: grid;
@@ -15,16 +19,18 @@ $text-color: white;
     z-index: 2;
 
     color: $text-color;
+    background-color: rgb(236, 236, 236);
+    
 }
 
-.navbar::before {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 5vw;
-    z-index: -1;
-    background-image: linear-gradient(to bottom, #252525 0%, rgba(37, 37, 37, 0) 75%);
-}
+// .navbar::before {
+//     content: "";
+//     position: absolute;
+//     width: 100vw;
+//     height: 5vw;
+//     z-index: -1;
+//     // background-image: linear-gradient(to bottom, #07359f 0%, rgba(37, 37, 37, 0) 75%);
+// }
 
 .logo {
     display: flex;
@@ -51,6 +57,7 @@ $text-color: white;
         // font-weight: bold;
         font-size: 16px;
         white-space: nowrap;
+        text-transform: uppercase;
     }
 
     a:hover {
