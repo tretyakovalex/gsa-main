@@ -105,6 +105,44 @@ main {
         .card {
             flex-direction: column;
             height: fit-content;
+            width: 300px;
+
+            .contacts {
+                .item {
+                    width: 100%;
+                }
+            }
+
+            .location {
+                iframe {
+                    width: 100%;
+                }
+            }
+
+            .form-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h2 {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+
+            form {
+                input, label, button {
+                    width: 15rem;
+                }
+
+                textarea {
+                    width: 16rem;
+                }
+            }
         }
     }
 

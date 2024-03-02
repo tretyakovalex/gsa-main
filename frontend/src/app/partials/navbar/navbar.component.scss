@@ -92,6 +92,7 @@ $text-color: black;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        // height: 60px;
 
         .top-navbar {
             display: flex;
@@ -99,11 +100,11 @@ $text-color: black;
             align-items: center;
             justify-content: space-between;
             width: 20em;
-            // margin-bottom: 50px;
+            height: 60px;
 
             .logo {
                 padding-left: 0; 
-                
+
                 img {
                     display: flex;
                     justify-content: left;
