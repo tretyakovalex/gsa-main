@@ -8,21 +8,21 @@ import { Component } from '@angular/core';
 export class GalleryComponent {
 
   imgs: string[] = [
-    '/assets/images/IMG_1.JPG',
-    '/assets/images/IMG_2.JPG',
-    '/assets/images/IMG_3.JPG',
-    '/assets/images/IMG_4.JPG',
-    '/assets/images/IMG_5.JPG',
-    '/assets/images/IMG_6.JPG',
-    '/assets/images/IMG_7.JPG',
-    '/assets/images/IMG_8.JPG',
-    '/assets/images/IMG_9.JPG',
-    '/assets/images/IMG_10.JPG',
-    '/assets/images/IMG_11.JPG',
-    '/assets/images/IMG_12.JPG',
-    '/assets/images/IMG_13.JPG',
-    '/assets/images/IMG_14.JPG',
-    '/assets/images/IMG_15.JPG'
+    '/assets/images/IMG_1.jpeg',
+    '/assets/images/IMG_2.jpeg',
+    '/assets/images/IMG_3.jpeg',
+    '/assets/images/IMG_4.jpeg',
+    '/assets/images/IMG_5.jpeg',
+    '/assets/images/IMG_6.jpeg',
+    '/assets/images/IMG_7.jpeg',
+    '/assets/images/IMG_8.jpeg',
+    '/assets/images/IMG_9.jpeg',
+    '/assets/images/IMG_10.jpeg',
+    '/assets/images/IMG_11.jpeg',
+    '/assets/images/IMG_12.jpeg',
+    '/assets/images/IMG_13.jpeg',
+    '/assets/images/IMG_14.jpeg',
+    '/assets/images/IMG_15.jpeg'
   ];
 
   columns = 4; // Number of columns
