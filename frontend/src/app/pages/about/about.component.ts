@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   titleText: string = 'About Us';
+  title_bg_img_path: string = '/assets/about_us_background.webp';
+
 }

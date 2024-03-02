@@ -19,7 +19,7 @@ $text-color: white;
     justify-content: center;
     
     .title-background {
-        background-image: url('/assets/background-chemical-lab.jpg');
+        // background-image: url('/assets/about_us_background.webp');
         position: absolute;
         top: 0;
         left: 0;
@@ -27,7 +27,7 @@ $text-color: white;
         height: 100%;
         background-size: cover;
         background-position: center;
-        filter: blur(2px); /* Apply the blur effect only to the background */
+        // filter: blur(2px); /* Apply the blur effect only to the background */
         z-index: -1;
     }
 

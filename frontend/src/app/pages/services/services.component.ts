@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ServicesComponent {
   titleText: string = 'Our Services';
+  title_bg_img_path: string = '/assets/our_service_background.jpeg';
 
 }

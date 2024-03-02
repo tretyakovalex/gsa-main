@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class TitleComponentComponent {
   @Input() titleText!: string;
+  @Input() backgroundImagePath: string = '/assets/about_us_background.webp';
 }
