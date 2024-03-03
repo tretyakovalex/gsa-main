@@ -1,0 +1,96 @@
+.hero {
+    margin-top: 5rem;
+
+    width: 100%;
+
+    background-color: #E0E0E0;
+
+    color: white;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: -1rem;
+
+
+    h2 {
+        font-size: 48px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #1D253B;
+    }
+
+    .services {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .service-card {
+            width: 300px;
+            height: 300px;
+
+            overflow: hidden;
+            position: relative;
+
+            padding: 0;
+            img {
+                position: relative;
+                width: auto;
+                height: 100%; /* Scale the image to fit the height of the container */
+                object-fit: cover;
+                z-index: 0;
+            }
+
+            .img-filter {
+                background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background for better readability */
+                height: 100%;
+                width: 100%;
+                margin-top: -101.5%;
+                z-index: 1;
+                position: relative;
+            }
+
+            h3 {
+                text-align: center;
+                position: relative;
+                color: #fff;
+                // padding: 5px 10px; /* Add padding to the text */
+                z-index: 2;
+                margin-top: -50%;
+                font-size: 32px;
+            }
+        }
+    }
+
+    a {
+        all: unset;
+        border: 3px solid #1D253B;
+        padding: 1rem;
+        padding-left: 2rem;        
+        padding-right: 2rem;       
+        color: #1D253B; 
+
+        margin-top: 2rem;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+    .services {
+        flex-direction: column;
+    }
+}

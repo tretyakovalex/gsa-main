@@ -25,6 +25,110 @@ main {
     width: 80%;
 }
 
+.hero {
+    display: flex;
+    // grid-template-columns: 2fr 1fr; 
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 5rem;
+    margin-left: 5rem;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: flex-start;
+
+        h2 {
+            // margin-left: 10rem;
+            font-size: 36px;
+        }
+        
+        p {
+            // margin-left: 10rem;
+            width: 50%;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 60%;
+
+            .stat {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h2 {
+                    color: #25AAE1;
+                    font-size: 48px;
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                // border: 1px solid black;
+            }
+        }
+    }
+
+    .right {
+        margin-right: 5rem;
+        .card-container {
+            background-image: url('/assets/mining.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 230px;
+            width: 200px;
+
+            .card-container-filter {
+                background-color: rgba(37, 170, 225, 0.5);
+                height: 100%;
+                width: 100%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .content {
+                    height: 90%;
+                    width: 90%;
+                    position: relative;
+                    z-index: 1;
+    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: white;
+    
+                    color: black;
+    
+                    h2 {
+                        color: #25AAE1;
+                        margin-top: 10px;
+                        margin-bottom: 0;
+                        font-size: 62px;
+                    }
+
+                    p {
+                        text-align: center;
+                        width: 80%;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
+
 @media screen and (max-width: 900px) {
     main {
         h2 {
@@ -36,6 +140,33 @@ main {
         //         font-size: 3rem;
         //     }
         // }
+
+        .hero {
+            flex-direction: column;
+
+            .left {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+
+                h2, p {
+                    width: 100%;
+                    text-align: center;
+                }
+                .stats {
+                    width: 100%;
+                    align-items: center;
+                }
+            }
+
+            .right {
+                // width: 100%;
+                margin-right: 0;
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
     }
 
     

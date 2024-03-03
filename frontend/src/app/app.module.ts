@@ -13,6 +13,8 @@ import { TitleComponentComponent } from './partials/title-component/title-compon
 import { ContactComponent } from './pages/contact/contact.component';
 import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
 import { GalleryComponent } from './partials/gallery/gallery.component';
+import { AboutHeroComponent } from './partials/about-hero/about-hero.component';
+import { ServicesHeroComponent } from './partials/services-hero/services-hero.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { GalleryComponent } from './partials/gallery/gallery.component';
     TitleComponentComponent,
     ContactComponent,
     ComingSoonComponent,
-    GalleryComponent
+    GalleryComponent,
+    AboutHeroComponent,
+    ServicesHeroComponent
   ],
   imports: [
     BrowserModule,
