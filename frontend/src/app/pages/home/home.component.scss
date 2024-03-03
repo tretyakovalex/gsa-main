@@ -143,6 +143,7 @@ main {
 
         .hero {
             flex-direction: column;
+            margin-left: 0;
 
             .left {
                 width: 100%;
@@ -156,6 +157,7 @@ main {
                 .stats {
                     width: 100%;
                     align-items: center;
+                    grid-template-columns: repeat(2, 1fr);
                 }
             }
 
