@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-gallery',
@@ -25,6 +25,8 @@ export class GalleryComponent {
     '/assets/images/IMG_15.jpeg'
   ];
 
+  constructor(private renderer: Renderer2){}
+
   columns = 4; // Number of columns
 
   // Generate an array of numbers representing column indices
@@ -38,5 +40,19 @@ export class GalleryComponent {
     console.log(this.imgs.slice(startIndex, endIndex));
     return this.imgs.slice(startIndex, endIndex);
   }
+
+    // // --- lazy loading images ---
+    // loaded(event: Event) {
+    //   const img = event.target as HTMLImageElement;
+    //   const blurredImageDiv = img.parentElement;
+    //   this.renderer.addClass(blurredImageDiv, 'loaded');
+    // }
+  
+    // getModifiedImageUrl(originalUrl: string): string {
+    //   const [imageName, fileExtension] = originalUrl.split('.');
+    //   const modifiedUrl = `${imageName}-small.${fileExtension}`;
+    //   return modifiedUrl;
+    // }
+    // // ----------------------------
 
 }

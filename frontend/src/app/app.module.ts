@@ -15,6 +15,7 @@ import { ComingSoonComponent } from './pages/coming-soon/coming-soon.component';
 import { GalleryComponent } from './partials/gallery/gallery.component';
 import { AboutHeroComponent } from './partials/about-hero/about-hero.component';
 import { ServicesHeroComponent } from './partials/services-hero/services-hero.component';
+import { AltNavbarComponent } from './partials/alt-navbar/alt-navbar.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ServicesHeroComponent } from './partials/services-hero/services-hero.co
     ComingSoonComponent,
     GalleryComponent,
     AboutHeroComponent,
-    ServicesHeroComponent
+    ServicesHeroComponent,
+    AltNavbarComponent
   ],
   imports: [
     BrowserModule,
