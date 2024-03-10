@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit  } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-alt-navbar',
@@ -14,6 +14,14 @@ export class AltNavbarComponent {
     this.screenWidth = window.innerWidth;
     console.log(this.screenWidth);
     // this.checkScreenWidth();
+  }
+
+  isSticky: boolean = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    // Check if the user has scrolled past a certain threshold
+    this.isSticky = window.scrollY > 100; // Adjust the threshold as needed
   }
 
   @HostListener('window:resize', ['$event'])

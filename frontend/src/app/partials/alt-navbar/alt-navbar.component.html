@@ -19,7 +19,26 @@
     </div>
 </div>
 
-<div class="navbar" *ngIf="screenWidth > 900">
+<div class="navbar" *ngIf="screenWidth > 900" [class.sticky]="isSticky">
+    <div class="quick-info" *ngIf="!isSticky">
+        <div class="item">
+            <img src="/assets/icons/phone.svg">
+            <p>+(250) 788300142</p>
+        </div>
+        <div class="item">
+            <img src="/assets/icons/whatsapp.svg">
+            <p>+(250) 788300142</p>
+        </div>
+        <div class="item">
+            <img src="/assets/icons/email.svg">
+            <p>globalanalysisltd@gmail.com</p>
+        </div>
+        <div class="item">
+            <img src="/assets/icons/location.svg">
+            <!-- <p>building, street, City</p> -->
+            <p>Special Economic Zone, Plot № B2, P.B 32 51, Kigali, Rwanda</p>
+        </div>
+    </div>
     <div class="logo">
         <!-- <img src="/assets/gsa-stamp.jpg" alt=""> -->
         <!-- <img src="/assets/logo.png" alt=""> -->
@@ -27,7 +46,7 @@
     </div>
     <div class="links" >
         <a routerLink="/">Home</a>
-        <a routerLink="/about">About us</a>x
+        <a routerLink="/about">About us</a>
         <a routerLink="/services">Our services</a>
         <a routerLink="/careers">Careers</a>
         <a routerLink="/contacts">Contact us</a>

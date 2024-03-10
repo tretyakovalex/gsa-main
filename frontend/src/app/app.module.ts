@@ -36,7 +36,7 @@ import { AltNavbarComponent } from './partials/alt-navbar/alt-navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

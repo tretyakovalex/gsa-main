@@ -23,7 +23,42 @@ $text-color: black;
 
     color: $text-color;
     background-color: rgb(236, 236, 236);
-    
+    transition: transform 0.3s ease-in-out;
+}
+
+.sticky {
+    // top: -5px; /* Adjust the height of your navbar */
+    flex-direction: row;
+
+    .logo {
+        img {
+            height: 100px;
+        }
+    }
+}
+
+.quick-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+
+    border-bottom: 1px solid rgba(132, 132, 132, 0.424);
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        img {
+            height: 20px;
+        }
+
+        p {
+            text-transform: none;
+        }
+    }
 }
 
 .logo {
@@ -32,7 +67,7 @@ $text-color: black;
     padding: 1rem; 
    img {
         // height: 50px;
-        height: 100px;
+        height: 200px;
     
         display: flex;
         align-items: center;
@@ -51,9 +86,10 @@ $text-color: black;
         all: unset;
         margin-right: 20px;
         // font-weight: bold;
-        font-size: 16px;
+        font-size: 24px;
         white-space: nowrap;
-        text-transform: uppercase;
+        text-transform: none;
+        color: #4472c4;
         
         p {
             border: 1px solid black;
@@ -116,6 +152,7 @@ $text-color: black;
                 img {
                     display: flex;
                     justify-content: left;
+                    height: 50px;
                 }    
             }
 

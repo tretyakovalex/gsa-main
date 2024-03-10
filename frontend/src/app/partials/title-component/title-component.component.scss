@@ -5,6 +5,10 @@ $text-color: white;
     font-family: 'Poppins', sans-serif;
 }
 
+.sticky {
+    margin-top: 100px;
+}
+
 .title {
     position: relative;
     // z-index: 0;
@@ -17,6 +21,8 @@ $text-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-top: 300px;
 
     background-color: rgba(49, 51, 95, 0.35);
 

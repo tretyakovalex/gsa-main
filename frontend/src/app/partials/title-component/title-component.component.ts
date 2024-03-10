@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 
 @Component({
   selector: 'app-title-component',
@@ -8,4 +8,12 @@ import { Component, Input } from '@angular/core';
 export class TitleComponentComponent {
   @Input() titleText!: string;
   @Input() backgroundImagePath: string = '/assets/about_us_background.webp';
+
+  isSticky: boolean = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    // Check if the user has scrolled past a certain threshold
+    this.isSticky = window.scrollY > 100; // Adjust the threshold as needed
+  }
 }
