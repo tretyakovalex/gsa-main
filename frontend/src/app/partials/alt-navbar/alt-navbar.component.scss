@@ -31,6 +31,9 @@ $text-color: black;
     flex-direction: row;
 
     .logo {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
         img {
             height: 100px;
         }
