@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-alt-navbar',
@@ -14,6 +15,12 @@ export class AltNavbarComponent {
     this.screenWidth = window.innerWidth;
     console.log(this.screenWidth);
     // this.checkScreenWidth();
+  }
+
+  constructor(private router: Router) { }
+
+  isRouteActive(routePath: string): boolean {
+    return this.router.url === routePath;
   }
 
   isSticky: boolean = false;

@@ -44,12 +44,15 @@
         <!-- <img src="/assets/logo.png" alt=""> -->
         <img src="/assets/logo.svg" alt="">
     </div>
-    <div class="links" >
-        <a routerLink="/">Home</a>
-        <a routerLink="/about">About us</a>
-        <a routerLink="/services">Our services</a>
-        <a routerLink="/careers">Careers</a>
-        <a routerLink="/contacts">Contact us</a>
-        <a routerLink="/login"><p><strong>Login</strong></p></a>
+    <div class="links">
+        <a [routerLink]="['/']" [class.active]="isRouteActive('/')">Home</a>
+        <a [routerLink]="['/about']" [class.active]="isRouteActive('/about')">About us</a>
+        <a [routerLink]="['/services']" [class.active]="isRouteActive('/services')">Our services</a>
+        <a [routerLink]="['/careers']" [class.active]="isRouteActive('/careers')">Careers</a>
+        <a [routerLink]="['/contacts']" [class.active]="isRouteActive('/contacts')">Contact us</a>
+        <a [routerLink]="['/login']" [class.active]="isRouteActive('/login')">
+          Login
+        </a>
     </div>
+      
 </div>

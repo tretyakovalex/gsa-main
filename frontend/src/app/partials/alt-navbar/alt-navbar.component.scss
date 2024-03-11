@@ -22,7 +22,8 @@ $text-color: black;
     z-index: 2;
 
     color: $text-color;
-    background-color: rgb(236, 236, 236);
+    // background-color: rgb(236, 236, 236);
+    background-color: white;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -33,7 +34,7 @@ $text-color: black;
     .logo {
         padding-top: 5px;
         padding-bottom: 5px;
-        
+
         img {
             height: 100px;
         }
@@ -84,6 +85,10 @@ $text-color: black;
     align-items: center;
     justify-content: space-evenly;
     width: 80%;
+    margin-bottom: 10px;
+
+    // box-sizing: border-box;
+
     
     a {
         all: unset;
@@ -93,23 +98,44 @@ $text-color: black;
         white-space: nowrap;
         text-transform: none;
         color: #4472c4;
+        padding: 5px 10px;
+        border: 1px solid white;
+
+        // box-sizing: border-box;
+
+        // border: 1px solid black;
+        // padding: 5px 10px;
+        // border-radius: 12px;
         
         p {
-            border: 1px solid black;
+            // border: 1px solid black;
             padding: 5px 10px;
         }
         
     }
     
     a:hover {
-        color: blue;
+        // color: blue;
         cursor: pointer;
         
+        border: 1px solid #4472c4;
+        background-color: #4472c4;
+        padding: 5px 10px;
+        border-radius: 12px;
+        color: white;
+        
         p:hover {
-            border: 1px solid white;
-            background-color: blue;
-            color: white;
+            // border: 1px solid white;
+            // background-color: blue;
+            // color: white;
+            // color: blue;
         }
+    }
+
+    .active {
+        border: 1px solid #4472c4;
+        border-radius: 12px;
+        padding: 5px 10px;
     }
 
     // margin-right: 50px;
