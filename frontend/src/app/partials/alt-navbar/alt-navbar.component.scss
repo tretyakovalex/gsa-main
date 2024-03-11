@@ -69,7 +69,12 @@ $text-color: black;
     display: flex;
     gap: 20px;
     padding: 1rem; 
-   img {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
         // height: 50px;
         height: 200px;
     
